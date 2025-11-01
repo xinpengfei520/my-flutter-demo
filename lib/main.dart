@@ -104,7 +104,10 @@ class _MyHomePageState extends State<MyHomePage> {
           // wireframe for each widget.
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            const Text('You have pushed the button this many times:'),
+            const Icon(Icons.mobile_friendly, size: 32, color: Colors.green),
+            SizedBox(height: 12),
+            const Text('You have pushed the button this many times:', style: TextStyle(color: Colors.black, fontSize: 14)),
+            SizedBox(height: 12),
             Text(
               '$_counter',
               style: Theme.of(context).textTheme.headlineMedium,
